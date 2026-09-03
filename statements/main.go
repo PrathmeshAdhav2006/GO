@@ -12,6 +12,21 @@ func sqrt(x float64) string {
 	return fmt.Sprint(math.Sqrt(x))
 }
 
+func pow(x, n, lim float64) float64 {
+	if v := math.Pow(x, n); v < lim {
+		return v
+	}
+	return lim
+}
+
+// func pow(x, n, lim float64) float64 {   its same as tha upper func just a diff syntax
+// 	v := math.Pow(x, n);                 
+// 	if  v < lim {
+// 		return v
+// 	}
+// 	return lim
+// }
+
 func main() {
 	fmt.Println(sqrt(2), sqrt(-4))
 }
