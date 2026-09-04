@@ -15,12 +15,14 @@ func sqrt(x float64) string {
 func pow(x, n, lim float64) float64 {
 	if v := math.Pow(x, n); v < lim {
 		return v
+	} else {
+		fmt.Printf("%g >= %g\n", v, lim) //v can be used here because it is in the same block as the if statement
 	}
 	return lim
 }
 
 // func pow(x, n, lim float64) float64 {   its same as tha upper func just a diff syntax
-// 	v := math.Pow(x, n);                 
+// 	v := math.Pow(x, n);
 // 	if  v < lim {
 // 		return v
 // 	}
@@ -29,4 +31,5 @@ func pow(x, n, lim float64) float64 {
 
 func main() {
 	fmt.Println(sqrt(2), sqrt(-4))
+	fmt.Println(pow(3, 2, 10), pow(3, 3, 20))
 }
