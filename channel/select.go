@@ -22,7 +22,7 @@ func main() {
 		for i := 0; i < 10; i++ {
 			fmt.Println(<-c)
 		}
-		quit <- 0
+		quit <- 0 // send quit signal
 	}()
 	fibonacci(c, quit)
 }
