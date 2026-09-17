@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// sum calculates the sum of a slice of integers and sends the result to a channel.
 func sum(s []int, c chan int) {
 	sum := 0
 	for _, v := range s {
