@@ -12,6 +12,7 @@ func mixed(x string, y int) (int, string) {
 	return y + 10, x + " added string"
 }
 
+// split takes an integer sum and splits it into two parts, x and y, based on a specific ratio.
 func split(sum int) (x, y int) {
 	x = sum * 4 / 9
 	y = sum - x
