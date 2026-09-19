@@ -8,6 +8,7 @@ func add(x, y int) int {
 	return x + y
 }
 
+// mixed takes a string and an integer, performs some operations, and returns an integer and a string.
 func mixed(x string, y int) (int, string) {
 	return y + 10, x + " added string"
 }
