@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// This program demonstrates the zero values of different data types in Go.
 func main() {
 	var i int
 	var f float64
