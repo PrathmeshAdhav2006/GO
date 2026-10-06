@@ -20,7 +20,11 @@ func split(sum int) (x, y int) {
 	return
 }
 
+
+// main func
 func main() {
+
+
 	fmt.Println(add(5, 5))
 	fmt.Println(mixed("hello", 5))
 	a, b := mixed("hello", 5)
